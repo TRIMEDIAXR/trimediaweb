@@ -9,8 +9,8 @@ body {
     overflow-x: hidden !important; /* Hide horizontal scrollbar */
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     overflow: auto;
-    background: linear-gradient(45deg, rgb(3, 79, 117) 3%, rgb(78, 78, 79) 38%, rgb(165, 118, 42) 100%);
-    animation: gradient 8s ease infinite;
+    background: linear-gradient(45deg, rgb(3, 79, 117) 18%, rgb(78, 78, 79) 38%, rgb(165, 118, 42) 70%);
+    animation: gradient 5s ease infinite;
     background-size: 500% 500%;
     background-attachment: fixed;
     margin: 0;
