@@ -17,7 +17,10 @@ body {
     padding: 0;
     height: 100vh;
 }
-
+.card{
+    background-color: rgba(255, 255, 255, 0.148) !important;
+    border-radius: 30px !important;
+}
 .areaSup{
     height: 15%;
     display: flex;
@@ -29,10 +32,20 @@ body {
 }
 .areaCentral{
     height: 70%;
+
 }
 .areaInf{
     height: 15vh;
 }
+
+.videos {
+    object-fit: cover;
+    height: 40vh;
+    width: auto;
+}
+
+
+
 @keyframes gradient {
     0% {
         background-position: 0% 0%;

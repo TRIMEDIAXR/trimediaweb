@@ -14,19 +14,51 @@
     <header class="areaSup">
         <img src="images/TRIMEDIALOGO.png" alt="logo" class="logo mt-4">
     </header>
-    <main class="areaCentral">
-
+    <main class="areaCentral d-flex flex-column align-content-center">
+        <section id="pantallaContacto" class="row align-center">
+            <div class="col-lg-10 col-9 card ps-2 pe-2 me-5 ms-5">
+                <div class="card-body d-flex flex-column justify-content-center">
+                    <p class="card-text text-center text-white mb-0">Desarrollo de software & hardware 
+                    para experiencias interactivas.
+                    </p>
+                    <div class="w-100 ">
+                        <img src="videos/gifAnima.gif" autoplay loop class="videos"></img>
+                    </div>
+                  
+                  <a href="#" class="btn btn-outline-warning">Go somewhere</a>
+                </div>
+              </div>
+        </section>
+        <section id="pantallaRedes" class="row">
+            <div class="col-lg-10 col-9 card ps-2 pe-2 me-5 ms-5">
+                <div class="card-body">
+                  
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+        </section>
+        <section id="pantallaMail" class="row">
+            <div class="col-lg-10 col-9 card ps-2 pe-2 me-5 ms-5">
+                
+                <div class="card-body">
+                  
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+        </section>
     </main>
     <footer class="areaInf">
         <div class="row d-flex justify-content-center m-0">
             <div class="col text-white text-center m-0">
-                Instagram
+                <button type="button" class="btn btn-outline-light" id="instagram" onclick="mostrarRedes()">Redes</button>
             </div>
             <div class="col text-white text-center m-0">
-                Whatsapp
+                <button type="button" class="btn btn-outline-light" id="contacto" onclick="mostrarContacto()">Contacto</button>
             </div>
             <div class="col text-white text-center m-0">
-                Mail
+                <button type="button" class="btn btn-outline-light" id="meet" onclick="mostrarMail()">Mail</button>
             </div>
         </div>
     </footer>
