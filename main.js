@@ -1,13 +1,19 @@
-const pantallaContacto= document.getElementById("pantallaContacto").style.display="none";
-const pantallaRedes= document.getElementById("pantallaRedes").style.display="none";
-const pantallaMail= document.getElementById("pantallaMail").style.display="none";
+const pantallaHSI= document.getElementById("pantallaHSI").style.display="none";
+const pantallaVR= document.getElementById("pantallaVR").style.display="none";
+const pantallaBTL= document.getElementById("pantallaBTL").style.display="none";
 
-function mostrarContacto(){
-    const pantallaContacto= document.getElementById("pantallaContacto").style.display="flex";
+function mostrarHSI(){
+    const pantallaHSI= document.getElementById("pantallaHSI").style.display="flex";
+    const pantallaVR= document.getElementById("pantallaVR").style.display="none";
+const pantallaBTL= document.getElementById("pantallaBTL").style.display="none";
 }
-function mostrarRedes(){
-    const pantallaContacto= document.getElementById("pantallaRedes").style.display="flex";
+function mostrarVR(){
+    const pantallaContacto= document.getElementById("pantallaVR").style.display="flex";
+    const pantallaHSI= document.getElementById("pantallaHSI").style.display="none";
+    const pantallaBTL= document.getElementById("pantallaBTL").style.display="none";
 }
-function mostrarMail(){
-    const pantallaContacto= document.getElementById("pantallaMail").style.display="flex";
+function mostrarBTL(){
+    const pantallaContacto= document.getElementById("pantallaBTL").style.display="flex";
+    const pantallaHSI= document.getElementById("pantallaHSI").style.display="none";
+const pantallaVR= document.getElementById("pantallaVR").style.display="none";
 }
