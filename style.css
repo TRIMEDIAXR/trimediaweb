@@ -32,9 +32,9 @@ body {
 }
 .card{
     border-style: none !important;
-    background-color: rgba(0, 0, 0, 0) !important;
+    background-color: rgba(255, 255, 255, 0.174) !important;
     border-radius: 5px !important;
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(18px);
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 .imgCard{
@@ -83,12 +83,25 @@ body {
     width: auto;
 }
 .logo3d{
-  object-fit:contain;
-    height: 40vh;
-    width: auto;
+  position: absolute;
+    z-index: -1;
+    height: 90vh;
+    width: 100vw;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+
 }
+.animaLogo{
+  margin-top: 17vh;
+  height: 60vh;
+  width: auto;
+
+}
+
+
 .logocontent{
-  height: 38vh;
+  height: 100% !important;
 }
 .lines {
     position: absolute;
@@ -100,9 +113,7 @@ body {
     width: 90vw;
     z-index: -1;
   }
-  #pantalla{
-    z-index: 3 !important;
-  }
+  
   .line {
     position: absolute;
     width: 1px;
