@@ -1,29 +1,23 @@
-const pantallaHSI = document.getElementById("pantallaHSI").style.display = "none";
-const pantallaVR = document.getElementById("pantallaVR").style.display = "none";
-const pantallaBTL = document.getElementById("pantallaBTL").style.display = "none";
+const pantalla = document.getElementById("pantalla").style.display = "none";
+const pantallaclass = document.getElementById("pantalla").style.flexDirection = "column";
+const pantallaAlign = document.getElementById("pantalla").style.alignContent = "center";
 
-function mostrarHSI() {
-    const pantallaHSI = document.getElementById("pantallaHSI").style.display = "flex";
-    const pantallaclassHSI = document.getElementById("pantallaHSI").style.flexDirection = "column";
-    const pantallajHSI = document.getElementById("pantallaHSI").style.alignContent = "center";
-    const pantallaVR = document.getElementById("pantallaVR").style.display = "none";
-    const pantallaBTL = document.getElementById("pantallaBTL").style.display = "none";
-    sonidoTap()
-}
-function mostrarVR() {
-    const pantallaVR = document.getElementById("pantallaVR").style.display = "flex";
-    const pantallaclassVR = document.getElementById("pantallaVR").style.flexDirection = "column";
-    const pantallajVR = document.getElementById("pantallaVR").style.alignContent = "center";
-    const pantallaHSI = document.getElementById("pantallaHSI").style.display = "none";
-    const pantallaBTL = document.getElementById("pantallaBTL").style.display = "none";
-    sonidoTap()
-}
-function mostrarBTL() {
-    const pantallaBTL = document.getElementById("pantallaBTL").style.display = "flex";
-    const pantallaclaSBTL = document.getElementById("pantallaBTL").style.flexDirection = "column";
-    const pantallajBTL = document.getElementById("pantallaBTL").style.alignContent = "center";
-    const pantallaHSI = document.getElementById("pantallaHSI").style.display = "none";
-    const pantallaVR = document.getElementById("pantallaVR").style.display = "none";
+function mostrarPantalla(boton){
+    const pantalla = document.getElementById("pantalla").style.display = "flex";
+    switch (boton.id) {
+        case "vr":
+            const textVR= document.getElementById("info").innerHTML="Diseño de videojuegos & juegos para Web, Realidad Virtual (VR), Realidad Aumentada (AR)."
+            const imgVR= document.getElementById("animado").src="videos/gifAnima3.gif";
+            break;
+        case "hsi":
+            const textHSI= document.getElementById("info").innerHTML="Desarrollo de software y hardware para experiencias interactivas."
+            const imgHSI= document.getElementById("animado").src="videos/gifAnima.gif";
+        break;
+        case "btl":
+            const textBTL= document.getElementById("info").innerHTML="Videojuegos para educación, capacitaciones, publicitarios y marcas (BTL)."
+            const imgBTL= document.getElementById("animado").src="videos/gifAnima2.gif";
+            break;
+    }
     sonidoTap()
 }
 
