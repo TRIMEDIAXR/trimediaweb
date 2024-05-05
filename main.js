@@ -9,7 +9,7 @@ function mostrarPantalla(boton){
     const pantalla = document.getElementById("pantalla").style.display = "flex";
     switch (boton.id) {
         case "vr":
-            const textVR= document.getElementById("info").innerHTML="Diseño de videojuegos & juegos para Web, Realidad Virtual (VR), Realidad Aumentada (AR)."
+            const textVR= document.getElementById("info").innerHTML="Diseño de videojuegos para Web, Realidad Virtual (VR), Realidad Aumentada (AR)."
             const imgVR= document.getElementById("animado1").style.display="flex";
             const img2 = document.getElementById("animado2").style.display = "none";
             const img3 = document.getElementById("animado3").style.display = "none";

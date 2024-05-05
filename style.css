@@ -31,17 +31,18 @@ body {
     color: #ffffff8e;
 }
 .card{
-    background-color: rgba(255, 255, 255, 0.148) !important;
-    border-radius: 30px !important;
+    border-style: none !important;
+    background-color: rgba(0, 0, 0, 0) !important;
+    border-radius: 5px !important;
     backdrop-filter: blur(3px);
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
-.areaSup{
-    height: 15%;
-    display: flex;
-    flex-direction: column;
-    align-content: center !important;
+.imgCard{
+  height: 32vh !important;
+  width: auto;
+  
 }
+
 .logo{
     width: auto;
     height: 5vh;
@@ -52,12 +53,28 @@ body {
     transform: scale(1.2);
 }
 
+.logobtn{
+  width: auto;
+  height: 7vh;
+  transition: all 1s
+}
+
+.logobtn:hover{
+  transform: scale(1.2);
+}
+.areaSup{
+  height: 15%;
+  display: flex;
+  flex-direction: column;
+  align-content: center !important;
+}
 .areaCentral{
-    height: 67%;
+    height: 65%;
 
 }
 .areaInf{
-    height: 18%;
+    height: 20%;
+    
 }
 
 .videos {
@@ -65,7 +82,14 @@ body {
     height: 40vh;
     width: auto;
 }
-
+.logo3d{
+  object-fit:contain;
+    height: 40vh;
+    width: auto;
+}
+.logocontent{
+  height: 38vh;
+}
 .lines {
     position: absolute;
     top: 0;
@@ -76,7 +100,9 @@ body {
     width: 90vw;
     z-index: -1;
   }
-  
+  #pantalla{
+    z-index: 3 !important;
+  }
   .line {
     position: absolute;
     width: 1px;
@@ -137,4 +163,18 @@ body {
     100% {
       top: 110%;
     }
+  }
+
+
+  @keyframes wipe-in-up {
+    from {
+      clip-path: inset(100% 0 0 0);
+    }
+    to {
+      clip-path: inset(0 0 0 0);
+    }
+  }
+  
+  [transition-style="in:wipe:up"] {
+    animation: 2.5s cubic-bezier(.25, 1, .30, 1) wipe-in-up both;
   }
