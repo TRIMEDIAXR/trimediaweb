@@ -8,6 +8,7 @@ function mostrarHSI() {
     const pantallajHSI = document.getElementById("pantallaHSI").style.alignContent = "center";
     const pantallaVR = document.getElementById("pantallaVR").style.display = "none";
     const pantallaBTL = document.getElementById("pantallaBTL").style.display = "none";
+    sonidoTap()
 }
 function mostrarVR() {
     const pantallaVR = document.getElementById("pantallaVR").style.display = "flex";
@@ -15,6 +16,7 @@ function mostrarVR() {
     const pantallajVR = document.getElementById("pantallaVR").style.alignContent = "center";
     const pantallaHSI = document.getElementById("pantallaHSI").style.display = "none";
     const pantallaBTL = document.getElementById("pantallaBTL").style.display = "none";
+    sonidoTap()
 }
 function mostrarBTL() {
     const pantallaBTL = document.getElementById("pantallaBTL").style.display = "flex";
@@ -22,6 +24,7 @@ function mostrarBTL() {
     const pantallajBTL = document.getElementById("pantallaBTL").style.alignContent = "center";
     const pantallaHSI = document.getElementById("pantallaHSI").style.display = "none";
     const pantallaVR = document.getElementById("pantallaVR").style.display = "none";
+    sonidoTap()
 }
 
 var type= new Typed('#txtAnimado',{
@@ -48,3 +51,8 @@ var type= new Typed('#txtAnimado',{
     fadeOutClass: 'typed-fade-out',
     fadeOutDelay: 50
 })
+
+function sonidoTap(){
+    var tap= new Audio("audio/fxTap.mp3");
+    tap.play();
+  }

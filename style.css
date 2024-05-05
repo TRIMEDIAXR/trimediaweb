@@ -22,12 +22,18 @@ body {
     background-color: #F9711C !important;
     border-color: #F9711C !important;
     color: white !important;
+    width: 70% !important;
+    align-self: center !important;
 }
-
+.creditos{
+    font-size: 12px;
+    color: #ffffff8e;
+}
 .card{
     background-color: rgba(255, 255, 255, 0.148) !important;
     border-radius: 30px !important;
     backdrop-filter: blur(3px);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 .areaSup{
     height: 15%;
@@ -42,20 +48,15 @@ body {
 }
 
 .logo:hover{
-    
     transform: scale(1.2);
-    
 }
 
-logo:active{
-    transform: scale(1.2);
-}
 .areaCentral{
-    height: 70%;
+    height: 67%;
 
 }
 .areaInf{
-    height: 15vh;
+    height: 18%;
 }
 
 .videos {
@@ -78,7 +79,7 @@ logo:active{
   .line {
     position: absolute;
     width: 1px;
-    height: 91%;
+    height: 82%;
     top: 0;
     left: 50%;
     background: rgba(255, 255, 255, 0.1);
