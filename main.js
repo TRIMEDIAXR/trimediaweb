@@ -23,3 +23,28 @@ function mostrarBTL() {
     const pantallaHSI = document.getElementById("pantallaHSI").style.display = "none";
     const pantallaVR = document.getElementById("pantallaVR").style.display = "none";
 }
+
+var type= new Typed('#txtAnimado',{
+    strings:[
+    '<i class="txtAnimado">EXPERIENCIAS INTERACTIVAS</i>',
+    '<i class="txtAnimado">VIDEOJUEGOS PERSONALIZADOS</i>',
+    '<i class="txtAnimado">VIDEOJUEGOS PARA EVENTOS</i>',
+    '<i class="txtAnimado">VIDEOJUEGOS PUBLICITARIOS</i>',
+    '<i class="txtAnimado">VIDEOJUEGOS EDUCATIVOS</i>',
+    '<i class="txtAnimado">REALIDAD VIRTUAL</i>',
+    '<i class="txtAnimado">REALIDAD AUMENTADA</i>'],
+    
+    typeSpeed: 70,
+    startDelay: 250,
+    backSpeed: 30,
+    smartBackspace: true,
+    shuffle: true,
+    backDelay: 1000,
+    loop: true,
+    loopCount: Infinity,
+    showCursor: true,
+    cursorChar: '/',
+    fadeOut: false,
+    fadeOutClass: 'typed-fade-out',
+    fadeOutDelay: 50
+})
