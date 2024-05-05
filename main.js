@@ -1,21 +1,30 @@
 const pantalla = document.getElementById("pantalla").style.display = "none";
 const pantallaclass = document.getElementById("pantalla").style.flexDirection = "column";
 const pantallaAlign = document.getElementById("pantalla").style.alignContent = "center";
+const img1 = document.getElementById("animado1").style.display = "none";
+const img2 = document.getElementById("animado2").style.display = "none";
+const img3 = document.getElementById("animado3").style.display = "none";
 
 function mostrarPantalla(boton){
     const pantalla = document.getElementById("pantalla").style.display = "flex";
     switch (boton.id) {
         case "vr":
             const textVR= document.getElementById("info").innerHTML="Diseño de videojuegos & juegos para Web, Realidad Virtual (VR), Realidad Aumentada (AR)."
-            const imgVR= document.getElementById("animado").src="videos/gifAnima3.gif";
+            const imgVR= document.getElementById("animado1").style.display="flex";
+            const img2 = document.getElementById("animado2").style.display = "none";
+            const img3 = document.getElementById("animado3").style.display = "none";
             break;
         case "hsi":
             const textHSI= document.getElementById("info").innerHTML="Desarrollo de software y hardware para experiencias interactivas."
-            const imgHSI= document.getElementById("animado").src="videos/gifAnima.gif";
+            const imghsi= document.getElementById("animado1").style.display="none";
+            const img = document.getElementById("animado2").style.display = "flex";
+            const imgd = document.getElementById("animado3").style.display = "none";
         break;
         case "btl":
             const textBTL= document.getElementById("info").innerHTML="Videojuegos para educación, capacitaciones, publicitarios y marcas (BTL)."
-            const imgBTL= document.getElementById("animado").src="videos/gifAnima2.gif";
+            const imgVRw= document.getElementById("animado1").style.display="none";
+            const img2d = document.getElementById("animado2").style.display = "none";
+            const img3s = document.getElementById("animado3").style.display = "flex";
             break;
     }
     sonidoTap()
