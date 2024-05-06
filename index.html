@@ -36,19 +36,29 @@
         
         <!--PANTALLA FLOTANTE-->
         <section id="pantalla" class="row">
-            <div class="col-lg-6 col-9 card me-2 ms-2" >
+            <div class="col-lg-6 col-9 card me-2 ms-2" id="tarjeta">
                 <div class="card-body d-flex flex-column justify-content-center">
                     <p class="card-text text-center text-white mb-0" id="info"></p>
                     <div class="w-100 d-flex justify-content-center ">
-                        <img src="images/HSIimg.png" autoplay loop class="img  mt-3 imgCard" id="animado1" style="display:none"></img>
+                        <img src="images/VRimg.png" autoplay loop class="img  mt-3 imgCard" id="animado1" style="display:none"></img>
                     </div>
                     <div class="w-100 d-flex justify-content-center ">
                         <img src="images/HSIimg.png" autoplay loop class="img  mt-3 imgCard" id="animado2"></img>
                     </div>
                     <div class="w-100 d-flex justify-content-center ">
-                        <img src="images/HSIimg.png" autoplay loop class="img mt-3 imgCard" id="animado3"></img>
+                        <img src="images/BTLimg.png" autoplay loop class="img mt-3 imgCard" id="animado3"></img>
                     </div>
-                    <a href="#" class="btn btn-outline-warning mt-3" id="informacion">Mas Info</a>
+                    <a href="#" class="btn btn-outline-warning mt-3" id="informacion" onclick="mostrarFormulario()">Consultas</a>
+                </div>
+
+            </div>
+        </section>
+        <!--PANTALLA FLOTANTE-->
+        <section id="formulario" class="row">
+            <div class="col-lg-6 col-9 card me-2 ms-2" id="tarjeta">
+                <div class="card-body d-flex flex-column justify-content-center">
+                    <p class="card-text text-center text-white mb-0"> FORMULARIO</p>
+                    <a href="#" class="btn btn-outline-light mt-3" id="btnEnviar" >Enviar</a>
                 </div>
 
             </div>

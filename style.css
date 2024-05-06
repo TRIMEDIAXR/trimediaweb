@@ -1,98 +1,108 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    
-    overflow-y: hidden !important; /* Hide vertical scrollbar */
-    overflow-x: hidden !important; /* Hide horizontal scrollbar */
-    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-    overflow: auto;
-    background: linear-gradient(45deg, rgb(168, 127, 12) 18%, rgb(21, 134, 172) 38%, rgb(8, 33, 85) 70%);
-    animation: gradient 8s ease infinite;
-    background-size: 500% 500%;
-    background-attachment: fixed;
-    margin: 0;
-    padding: 0;
-    height: 100vh;
+
+  overflow-y: hidden !important;
+  /* Hide vertical scrollbar */
+  overflow-x: hidden !important;
+  /* Hide horizontal scrollbar */
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  overflow: auto;
+  background: linear-gradient(45deg, rgb(168, 127, 12) 18%, rgb(21, 134, 172) 38%, rgb(8, 33, 85) 70%);
+  animation: gradient 8s ease infinite;
+  background-size: 500% 500%;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
 }
 
-.btn-outline-warning{
-    background-color: #F9711C !important;
-    border-color: #F9711C !important;
-    color: white !important;
-    width: 70% !important;
-    align-self: center !important;
+.btn-outline-warning {
+  background-color: #F9711C !important;
+  border-color: #F9711C !important;
+  color: white !important;
+  width: 70% !important;
+  align-self: center !important;
 }
-.creditos{
-    font-size: 12px;
-    color: #ffffff8e;
+
+.creditos {
+  font-size: 12px;
+  color: #ffffff8e;
 }
-.card{
-    border-style: none !important;
-    background-color: rgba(255, 255, 255, 0.064) !important;
-    border-radius: 5px !important;
-    backdrop-filter: blur(18px);
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+
+.card {
+  border-style: none !important;
+  background-color: rgba(255, 255, 255, 0.064) !important;
+  border-radius: 5px !important;
+  backdrop-filter: blur(18px);
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
-.imgCard{
+
+.imgCard {
   height: 32vh !important;
   width: auto;
-  
+
 }
 
-.logo{
-    width: auto;
-    height: 5vh;
-    transition: all 1s
+.logo {
+  width: auto;
+  height: 5vh;
+  transition: all 1s
 }
 
-.logo:hover{
-    transform: scale(1.2);
+.logo:hover {
+  transform: scale(1.2);
 }
 
-.logobtn{
+.logobtn {
   width: auto;
   height: 7vh;
   transition: all 1s
 }
 
-.logobtn:hover{
+.logobtn:hover {
   transform: scale(1.2);
 }
-.areaSup{
+
+.areaSup {
   height: 15%;
   display: flex;
   flex-direction: column;
   align-content: center !important;
 }
-.areaCentral{
-    height: 65%;
+
+.areaCentral {
+  height: 65%;
 
 }
-.areaInf{
-    height: 20%;
-    
+
+.areaInf {
+  height: 20%;
+
 }
 
 .videos {
-    object-fit: cover;
-    height: 40vh;
-    width: auto;
+  object-fit: cover;
+  height: 40vh;
+  width: auto;
 }
-.logo3d{
+
+.logo3d {
   position: absolute;
-    z-index: -1;
-    height: 90vh;
-    width: 100vw;
-    align-content: center;
-    display: flex;
-    justify-content: center;
+  z-index: -1;
+  height: 90vh;
+  width: 100vw;
+  align-content: center;
+  display: flex;
+  justify-content: center;
 
 }
-.animaLogo{
+
+.animaLogo {
   margin-top: 17vh;
   height: 60vh;
   width: auto;
@@ -100,92 +110,102 @@ body {
 }
 
 
-.logocontent{
+.logocontent {
   height: 100% !important;
 }
+
 .lines {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    margin: auto;
-    width: 90vw;
-    z-index: -1;
-  }
-  
-  .line {
-    position: absolute;
-    width: 1px;
-    height: 82%;
-    top: 0;
-    left: 50%;
-    background: rgba(255, 255, 255, 0.1);
-    overflow: hidden;
-  }
-  .line::after {
-    content: "";
-    display: block;
-    position: absolute;
-    height: 15vh;
-    width: 100%;
-    top: -50%;
-    left: 0;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #ffffff 75%, #ffffff 100%);
-    -webkit-animation: drop 5s 0s infinite;
-            animation: drop 7s 0s infinite;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
-    -webkit-animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
-            animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
-  }
-  .line:nth-child(1) {
-    margin-left: -37%;
-  }
-  .line:nth-child(1)::after {
-    -webkit-animation-delay: 2s;
-            animation-delay: 2s;
-  }
-  .line:nth-child(3) {
-    margin-left: 37%;
-  }
-  .line:nth-child(3)::after {
-    -webkit-animation-delay: 2.5s;
-            animation-delay: 2.5s;
-  }
-  
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  margin: auto;
+  width: 90vw;
+  z-index: -1;
+}
+
+.line {
+  position: absolute;
+  width: 1px;
+  height: 82%;
+  top: 0;
+  left: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+}
+
+.line::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 15vh;
+  width: 100%;
+  top: -50%;
+  left: 0;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #ffffff 75%, #ffffff 100%);
+  -webkit-animation: drop 5s 0s infinite;
+  animation: drop 7s 0s infinite;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
+  animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
+}
+
+.line:nth-child(1) {
+  margin-left: -37%;
+}
+
+.line:nth-child(1)::after {
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+}
+
+.line:nth-child(3) {
+  margin-left: 37%;
+}
+
+.line:nth-child(3)::after {
+  -webkit-animation-delay: 2.5s;
+  animation-delay: 2.5s;
+}
+
 
 @keyframes gradient {
-    0% {
-        background-position: 0% 0%;
-    }
-    50% {
-        background-position: 100% 100%;
-    }
-    100% {
-        background-position: 0% 0%;
-    }
+  0% {
+    background-position: 0% 0%;
+  }
+
+  50% {
+    background-position: 100% 100%;
+  }
+
+  100% {
+    background-position: 0% 0%;
+  }
 }
- 
-  @keyframes drop {
-    0% {
-      top: -50%;
-    }
-    100% {
-      top: 110%;
-    }
+
+@keyframes drop {
+  0% {
+    top: -50%;
   }
 
+  100% {
+    top: 110%;
+  }
+}
 
-  @keyframes wipe-in-up {
-    from {
-      clip-path: inset(100% 0 0 0);
-    }
-    to {
-      clip-path: inset(0 0 0 0);
-    }
+
+@keyframes wipe-in-up {
+  from {
+    clip-path: inset(100% 0 0 0);
   }
-  
-  [transition-style="in:wipe:up"] {
-    animation: 2.5s cubic-bezier(.25, 1, .30, 1) wipe-in-up both;
+
+  to {
+    clip-path: inset(0 0 0 0);
   }
+}
+
+[transition-style="in:wipe:up"] {
+  animation: 2.5s cubic-bezier(.25, 1, .30, 1) wipe-in-up both;
+}
