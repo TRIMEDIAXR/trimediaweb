@@ -98,10 +98,10 @@ function sonidoTap() {
     tap.play();
 }
 
-window.onload = function () {
+/* window.onload = function () {
 
     document.onclick = function (e) {
-        if (e.target.id !== "vr" && e.target.id !== "hsi" && e.target.id !== "btl" && e.target.id !== "informacion") {
+        if (e.target.id !== "vr" && e.target.id !== "hsi" && e.target.id !== "btl" && e.target.id !== "informacion" && e.target.id !== "formulario") {
             //element clicked wasn't the div; hide the div
             const divToHide = document.getElementById("pantalla").style.display = "none";
             const mostrarForm = document.getElementById("formulario").style.display = "none";
@@ -110,7 +110,7 @@ window.onload = function () {
             auxiliar3=0;
         }
     };
-}; 
+};  */
 
 function mostrarFormulario(){
     const esconder = document.getElementById("pantalla").style.display = "none";
@@ -118,5 +118,33 @@ function mostrarFormulario(){
     auxiliar1=0;
     auxiliar2=0;
     auxiliar3=0;
-
 }
+/* 
+function emailSend(){
+
+	var userName = document.getElementById('name').value;
+	var phone = document.getElementById('phone').value;
+	var email = document.getElementById('email').value;
+
+	var messageBody = "Name " + userName +
+	"<br/> Phone " + phone +
+	"<br/> Email " + email;
+	Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "experienciatrimedia@gmail.com",
+    Password : "41CDB9050E0467C0E744CB5CCED20E8912DD",
+    To : 'reviever@gmail.com',
+    From : "website@gmail.com",
+    Subject : "This is the subject",
+    Body : messageBody
+}).then(
+  message => {
+  	if(message=='OK'){
+  		swal("Secussful", "You clicked the button!", "success");
+  	}
+  	else{
+  		swal("Error", "You clicked the button!", "error");
+  	}
+  }
+);
+} */
