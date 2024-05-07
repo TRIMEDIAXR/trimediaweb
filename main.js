@@ -1,71 +1,22 @@
 const pantalla = document.getElementById("pantalla").style.display = "none";
-const form = document.getElementById("formulario").style.display = "none";
-const pantallaclass = document.getElementById("pantalla").style.flexDirection = "column";
-const pantallaAlign = document.getElementById("pantalla").style.alignContent = "center";
-const formclass = document.getElementById("formulario").style.flexDirection = "column";
-const formAlign = document.getElementById("formulario").style.alignContent = "center";
-const img1 = document.getElementById("animado1").style.display = "none";
-const img2 = document.getElementById("animado2").style.display = "none";
-const img3 = document.getElementById("animado3").style.display = "none";
+let auxiliar=0;
 
-let auxiliar1= 0;
-let auxiliar2= 0;
-let auxiliar3= 0;
+
 function mostrarPantalla(boton) {
-    const pantalla = document.getElementById("pantalla").style.display = "flex";
-    switch (boton.id) {
-        case "hsi":
-            if(auxiliar1==0){
-            const textHSI = document.getElementById("info").innerHTML = "Desarrollo de software y hardware para experiencias interactivas."
-            const imghsi = document.getElementById("animado1").style.display = "none";
-            const img = document.getElementById("animado2").style.display = "flex";
-            const imgd = document.getElementById("animado3").style.display = "none";
-            const mostrarForm = document.getElementById("formulario").style.display = "none";
-            auxiliar1=1;
-            auxiliar2=0;
-            auxiliar3=0;
-            }
-            else{
-                auxiliar1=0;
-                const img = document.getElementById("pantalla").style.display = "none";
-            }
 
-            break;
-        case "vr":
-            if(auxiliar2==0){
-            const textVR = document.getElementById("info").innerHTML = "Diseño de videojuegos para Web, Realidad Virtual (VR), Realidad Aumentada (AR)."
-            const imgVR = document.getElementById("animado1").style.display = "flex";
-            const img2 = document.getElementById("animado2").style.display = "none";
-            const img3 = document.getElementById("animado3").style.display = "none";
-            const mostrarForm = document.getElementById("formulario").style.display = "none";
-            auxiliar2=1;
-            auxiliar1=0;
-            auxiliar3=0;
-            }
-            else{
-                auxiliar2=0;
-                const img = document.getElementById("pantalla").style.display = "none";
-            }
-            
-            break;
-        case "btl":
-            if(auxiliar3==0){
-            const textBTL = document.getElementById("info").innerHTML = "Videojuegos para educación, capacitaciones, publicitarios y marcas (BTL)."
-            const imgVRw = document.getElementById("animado1").style.display = "none";
-            const img2d = document.getElementById("animado2").style.display = "none";
-            const img3s = document.getElementById("animado3").style.display = "flex";
-            const mostrarForm = document.getElementById("formulario").style.display = "none";
-            auxiliar3=1;
-            auxiliar2=0;
-            auxiliar1=0;
-            }
-            else{
-                auxiliar3=0;
-                const img = document.getElementById("pantalla").style.display = "none";
-            }
-            break;
-    }
+    const pantalla = document.getElementById("pantalla").style.display = "flex";
     sonidoTap()
+}
+
+function sonidoUI(boton){
+    if(boton.id == "izq"){
+        var izq = new Audio("audio/uiOne.ogg");
+    izq.play();
+    }
+    else{
+        var der = new Audio("audio/uiThree.ogg");
+    der.play();
+    }
 }
 
 var type = new Typed('#txtAnimado', {
@@ -94,57 +45,16 @@ var type = new Typed('#txtAnimado', {
 })
 
 function sonidoTap() {
-    var tap = new Audio("audio/fxTap.mp3");
+    var tap = new Audio("audio/uiTwo.ogg");
     tap.play();
 }
 
-/* window.onload = function () {
+window.onload = function () {
 
     document.onclick = function (e) {
-        if (e.target.id !== "vr" && e.target.id !== "hsi" && e.target.id !== "btl" && e.target.id !== "informacion" && e.target.id !== "formulario") {
+        if (e.target.id == "pantalla" || e.target.id == "tarjeta" || e.target.id == "caja" || e.target.id == "caja2") {
             //element clicked wasn't the div; hide the div
             const divToHide = document.getElementById("pantalla").style.display = "none";
-            const mostrarForm = document.getElementById("formulario").style.display = "none";
-            auxiliar1=0;
-            auxiliar2=0;
-            auxiliar3=0;
         }
     };
-};  */
-
-function mostrarFormulario(){
-    const esconder = document.getElementById("pantalla").style.display = "none";
-    const mostrarForm = document.getElementById("formulario").style.display = "flex";
-    auxiliar1=0;
-    auxiliar2=0;
-    auxiliar3=0;
-}
-/* 
-function emailSend(){
-
-	var userName = document.getElementById('name').value;
-	var phone = document.getElementById('phone').value;
-	var email = document.getElementById('email').value;
-
-	var messageBody = "Name " + userName +
-	"<br/> Phone " + phone +
-	"<br/> Email " + email;
-	Email.send({
-    Host : "smtp.elasticemail.com",
-    Username : "experienciatrimedia@gmail.com",
-    Password : "41CDB9050E0467C0E744CB5CCED20E8912DD",
-    To : 'reviever@gmail.com',
-    From : "website@gmail.com",
-    Subject : "This is the subject",
-    Body : messageBody
-}).then(
-  message => {
-  	if(message=='OK'){
-  		swal("Secussful", "You clicked the button!", "success");
-  	}
-  	else{
-  		swal("Error", "You clicked the button!", "error");
-  	}
-  }
-);
-} */
+};

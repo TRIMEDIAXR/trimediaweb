@@ -40,8 +40,12 @@ body {
   border-radius: 5px !important;
   backdrop-filter: blur(18px);
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  height: 100vh !important;
 }
-
+.columna{
+  margin-top: 20vh !important;
+  width: 100px !important;
+}
 .imgCard {
   height: 32vh !important;
   width: auto;
@@ -76,12 +80,22 @@ body {
 }
 
 .areaCentral {
-  height: 65%;
+  height: 68%;
 
 }
-
+.frente{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  z-index:21;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+}
 .areaInf {
-  height: 20%;
+  height: 15%;
+  z-index: 2 !important;
 
 }
 
@@ -93,7 +107,7 @@ body {
 
 .logo3d {
   position: absolute;
-  z-index: -1;
+  z-index: 0;
   height: 90vh;
   width: 100vw;
   align-content: center;
@@ -103,13 +117,17 @@ body {
 }
 
 .animaLogo {
-  margin-top: 17vh;
-  height: 60vh;
-  width: auto;
-
+  height: 70%;
+  width: auto !important;
+  border-radius: 250px !important;
+  border: 2px solid rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
-
+.carousel-caption{
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
 .logocontent {
   height: 100% !important;
 }
@@ -123,12 +141,13 @@ body {
   margin: auto;
   width: 90vw;
   z-index: -1;
+
 }
 
 .line {
   position: absolute;
   width: 1px;
-  height: 82%;
+  height: 100%;
   top: 0;
   left: 50%;
   background: rgba(255, 255, 255, 0.1);
