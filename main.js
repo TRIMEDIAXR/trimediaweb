@@ -49,6 +49,11 @@ function sonidoTap() {
     tap.play();
 }
 
+function sonidoBTN(){
+    var slide = new Audio("audio/uiFour.ogg");
+    slide.play();
+}
+
 window.onload = function () {
 
     document.onclick = function (e) {

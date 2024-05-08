@@ -12,8 +12,8 @@ body {
   /* Hide horizontal scrollbar */
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   overflow: auto;
-  background: linear-gradient(45deg, rgb(168, 127, 12) 18%, rgb(21, 134, 172) 38%, rgb(8, 33, 85) 70%);
-  animation: gradient 8s ease infinite;
+  background: linear-gradient(90deg, rgb(14, 46, 123) 29%, rgb(21, 92, 172) 38%, rgb(8, 33, 85) 70%);
+  animation: gradient 14s ease infinite;
   background-size: 500% 500%;
   background-attachment: fixed;
   margin: 0;
@@ -45,6 +45,12 @@ body {
 .columna{
   margin-top: 20vh !important;
   width: 100px !important;
+}
+.contact{
+  transition: all 1seg;
+}
+.contact:hover{
+  transform: scale(1.2);
 }
 .imgCard {
   height: 32vh !important;
