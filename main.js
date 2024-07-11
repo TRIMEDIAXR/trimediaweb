@@ -2,9 +2,27 @@ const pantalla = document.getElementById("pantalla").style.display = "none";
 let auxiliar=0;
 
 
-function mostrarPantalla(boton) {
-
+function mostrarContacto() {
     const pantalla = document.getElementById("pantalla").style.display = "flex";
+    const idContacto = document.getElementById("idContacto").style.display = "flex";
+    const idVR = document.getElementById("idVR").style.display = "none";
+    const idServicios = document.getElementById("idServicios").style.display = "none";
+    sonidoTap()
+}
+
+function mostrarExperiencia() {
+    const pantalla = document.getElementById("pantalla").style.display = "flex";
+    const idContacto = document.getElementById("idContacto").style.display = "none";
+    const idVR = document.getElementById("idVR").style.display = "flex";
+    const idServicios = document.getElementById("idServicios").style.display = "none";
+    sonidoTap()
+}
+
+function mostrarServicios() {
+    const pantalla = document.getElementById("pantalla").style.display = "flex";
+    const idContacto = document.getElementById("idContacto").style.display = "none";
+    const idVR = document.getElementById("idVR").style.display = "none";
+    const idServicios = document.getElementById("idServicios").style.display = "flex";
     sonidoTap()
 }
 

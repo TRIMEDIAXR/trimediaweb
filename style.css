@@ -46,6 +46,10 @@ body {
   margin-top: 20vh !important;
   width: 100px !important;
 }
+.columna2{
+  margin-top: 35vh !important;
+  width: 100px !important;
+}
 .contact{
   transition: all 1seg;
 }
