@@ -1,248 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, user-scalable=no">
-		<title>webXR</title>
-		<style>
-body {
-	touch-action: none;
-	margin: 0;
-	border: 0 none;
-	padding: 0;
-	text-align: center;
-	background-color: black;
-}
 
-#canvas {
-	display: block;
-	margin: 0;
-	color: white;
-}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <meta name="description" content="Trimedia Team">
+    <meta name="keywords" content="VR,AR,interactivo,videojuegos,BTL,realidad virtual,realidad aumentada">
+    <title>Trimedia Web</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/transition-style">
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+</head>
 
-#canvas:focus {
-	outline: none;
-}
+<body>
+    <!--EFECTO ANIMADO LINEAS CAYENDO-->
+    <div class="lines">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+    <!--PANTALLA FLOTANTE-->
+    <section id="pantalla" class="frente">
+        <div class=" card" id="tarjeta">
+            <div class="row  d-flex flex-column justify-content-center align-content-center" id="caja">
+                <div class="justify-content-center" id="idContacto">
+                    <div class="d-flex flex-column justify-content-center align-content-center columna" id="caja2">
+                        <a href="https://www.instagram.com/trimediaxr/"><img src="images/insta.png" alt="instagram" class="mt-2 contact"></a>
+                        <span class="text-white text-center">Instagram</span>
+                        <a href="https://wa.me/543513413350"><img src="images/whatsapp.png" alt="whatsapp" class="mt-4 contact"></a>
+                        <span class="text-white text-center">Whatsapp</span>
+                        <a href="mailto:experienciatrimedia@gmail.com">
+                            <img src="images/mail.png" alt="mail" class="mt-4 contact">
+                        </a>
+                        <span class="text-white text-center">Mail</span>
+                    </div>
+                </div>
+                <div class=" justify-content-center" id="idVR">
+                    <div class="d-flex flex-column justify-content-center align-content-center columna2" id="caja2">
+                        <a href="vr.html"><img src="images/vricon.png" alt="whatsapp" class="mt-4 contact img-fluid"></a>
+                        <span class="text-white text-center mt-3">Experiencia VR Online</span>
+                        
+                    </div>
+                </div>
+                <div class=" justify-content-center" id="idServicios">
+                    <div class="d-flex flex-column justify-content-center align-content-center columna" id="caja2">
+                        <a href="https://www.instagram.com/trimediaxr/"><img src="images/insta.png" alt="instagram" class="mt-2 contact"></a>
+                        <span class="text-white text-center">Instagram</span>
+                        <a href="https://wa.me/543513413350"><img src="images/whatsapp.png" alt="whatsapp" class="mt-4 contact"></a>
+                        <span class="text-white text-center">Whatsapp</span>
+                        <a href="mailto:experienciatrimedia@gmail.com">
+                            <img src="images/mail.png" alt="mail" class="mt-4 contact">
+                        </a>
+                        <span class="text-white text-center">Mail</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-.godot {
-	font-family: 'Noto Sans', 'Droid Sans', Arial, sans-serif;
-	color: #e0e0e0;
-	background-color: #3b3943;
-	background-image: linear-gradient(to bottom, #403e48, #35333c);
-	border: 1px solid #45434e;
-	box-shadow: 0 0 1px 1px #2f2d35;
-}
+    <header class="areaSup">
+        <a href="index.html" class="d-flex justify-content-center"><img src="images/Logo.png" alt="logo"
+                class="logo mt-4"></a>
 
-/* Status display */
+        <div class="text-center text-white mt-2">
+            <span id="txtAnimado" class=""></span>
+        </div>
+    </header>
+    <main class="areaCentral d-flex flex-column align-content-center">
+        <div id="carouselExampleCaptions" class="carousel slide h-100 carousel-fade mt-2" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1" onclick="sonidoBTN()"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2" onclick="sonidoBTN()"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3" onclick="sonidoBTN()"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                    aria-label="Slide 4" onclick="sonidoBTN()"></button>
+            </div>
+            <div class="carousel-inner h-100">
+                <div class="carousel-item active h-100">
+                    <div class="h-100 d-flex justify-content-center">
+                        <img src="images/team.png" alt="loopLogo" class="animaLogo">
+                    </div>
+                    <div class="carousel-caption d-md-block">
+                        <h5>Trimedia Team</h5>
+                        <p>Desarrollo de videojuegos y gamificación.</p>
+                    </div>
+                </div>
+                <div class="carousel-item h-100">
+                    <div class="h-100 d-flex justify-content-center contenedor">
+                        <img src="videos/vrxp.gif" alt="loopLogo" class="animaLogo">
+                    </div>
+                    <div class="carousel-caption d-md-block">
+                        <h5>VR/AR</h5>
+                        <p>Realidad Virtual y Aumentada.</p>
+                    </div>
+                </div>
+                <div class="carousel-item h-100">
+                    <div class="h-100 d-flex justify-content-center">
+                        <img src="videos/cuisquiz.gif" alt="loopLogo" class="animaLogo">
+                    </div>
+                    <div class="carousel-caption d-md-block mt-1">
+                        <h5>Gamificación</h5>
+                        <p>Sistemas gamificados para eventos, educación y empresas.</p>
+                    </div>
 
-#status {
-	position: absolute;
-	left: 0;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	/* don't consume click events - make children visible explicitly */
-	visibility: hidden;
-}
+                </div>
+                <div class="carousel-item h-100">
+                    <div class="h-100 d-flex justify-content-center">
+                        <img src="videos/meopp.gif" alt="loopLogo" class="animaLogo">
+                    </div>
+                    <div class="carousel-caption d-md-block">
+                        <h5>WebApps</h5>
+                        <p>Aplicaciones Interactivas Web.</p>
+                    </div>
+                </div>
+                <button class="carousel-control-prev h-75" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true" id="izq" onclick="sonidoUI(this)"></span>
+                    
+                </button>
+                <button class="carousel-control-next h-75" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true" id="der" onclick="sonidoUI(this)"></span>
+                    
+                </button>
+            </div>
 
-#status-progress {
-	width: 366px;
-	height: 7px;
-	background-color: #38363A;
-	border: 1px solid #444246;
-	padding: 1px;
-	box-shadow: 0 0 2px 1px #1B1C22;
-	border-radius: 2px;
-	visibility: visible;
-}
+    </main>
+    <footer class="areaInf">
+        <div class="row d-flex justify-content-center m-0">
+            <div class="col text-white text-center m-0">
+                <button type="button" class="btn btn-outline-light" onclick="mostrarContacto()">Contacto</button>
+            </div>
+            <div class="col text-white text-center m-0">
+                <button type="button" class="btn btn-outline-light" onclick="mostrarExperiencia()">VR</button>
+            </div>
+            <div class="col text-white text-center m-0">
+                <button type="button" class="btn btn-outline-light" onclick="mostrarServicios()">Servicios</button>
+            </div>
 
-@media only screen and (orientation:portrait) {
-	#status-progress {
-		width: 61.8%;
-	}
-}
+            <h5 class="text-center mt-1 creditos">Powered by Trimedia Team </h5>
+        </div>
+    </footer>
+    <audio src="audio/fxTap.mp3" id="tap" muted></audio>
+    
+    <!-- LIBRERIA DE TYPE ANIMACION DE TEXTO -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="main.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 
-#status-progress-inner {
-	height: 100%;
-	width: 0;
-	box-sizing: border-box;
-	transition: width 0.5s linear;
-	background-color: #202020;
-	border: 1px solid #222223;
-	box-shadow: 0 0 1px 1px #27282E;
-	border-radius: 3px;
-}
+</body>
 
-#status-indeterminate {
-	height: 42px;
-	visibility: visible;
-	position: relative;
-}
-
-#status-indeterminate > div {
-	width: 4.5px;
-	height: 0;
-	border-style: solid;
-	border-width: 9px 3px 0 3px;
-	border-color: #2b2b2b transparent transparent transparent;
-	transform-origin: center 21px;
-	position: absolute;
-}
-
-#status-indeterminate > div:nth-child(1) { transform: rotate( 22.5deg); }
-#status-indeterminate > div:nth-child(2) { transform: rotate( 67.5deg); }
-#status-indeterminate > div:nth-child(3) { transform: rotate(112.5deg); }
-#status-indeterminate > div:nth-child(4) { transform: rotate(157.5deg); }
-#status-indeterminate > div:nth-child(5) { transform: rotate(202.5deg); }
-#status-indeterminate > div:nth-child(6) { transform: rotate(247.5deg); }
-#status-indeterminate > div:nth-child(7) { transform: rotate(292.5deg); }
-#status-indeterminate > div:nth-child(8) { transform: rotate(337.5deg); }
-
-#status-notice {
-	margin: 0 100px;
-	line-height: 1.3;
-	visibility: visible;
-	padding: 4px 6px;
-	visibility: visible;
-}
-		</style>
-		<link id='-gd-engine-icon' rel='icon' type='image/png' href='index.icon.png' />
-<link rel='apple-touch-icon' href='index.apple-touch-icon.png'/>
-
-	</head>
-	<body>
-		<canvas id="canvas">
-			HTML5 canvas appears to be unsupported in the current browser.<br >
-			Please try updating or use a different browser.
-		</canvas>
-		<div id="status">
-			<div id="status-progress" style="display: none;" oncontextmenu="event.preventDefault();">
-				<div id ="status-progress-inner"></div>
-			</div>
-			<div id="status-indeterminate" style="display: none;" oncontextmenu="event.preventDefault();">
-				<div></div>
-				<div></div>
-				<div></div>
-				<div></div>
-				<div></div>
-				<div></div>
-				<div></div>
-				<div></div>
-			</div>
-			<div id="status-notice" class="godot" style="display: none;"></div>
-		</div>
-		<script src="coi-serviceworker.js"></script>
-		<script src="index.js"></script>
-		<script>
-const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"executable":"index","experimentalVK":false,"fileSizes":{"index.pck":15776640,"index.wasm":35649444},"focusCanvas":true,"gdextensionLibs":[]};
-const engine = new Engine(GODOT_CONFIG);
-
-(function () {
-	const INDETERMINATE_STATUS_STEP_MS = 100;
-	const statusProgress = document.getElementById('status-progress');
-	const statusProgressInner = document.getElementById('status-progress-inner');
-	const statusIndeterminate = document.getElementById('status-indeterminate');
-	const statusNotice = document.getElementById('status-notice');
-
-	let initializing = true;
-	let statusMode = 'hidden';
-
-	let animationCallbacks = [];
-	function animate(time) {
-		animationCallbacks.forEach((callback) => callback(time));
-		requestAnimationFrame(animate);
-	}
-	requestAnimationFrame(animate);
-
-	function animateStatusIndeterminate(ms) {
-		const i = Math.floor((ms / INDETERMINATE_STATUS_STEP_MS) % 8);
-		if (statusIndeterminate.children[i].style.borderTopColor === '') {
-			Array.prototype.slice.call(statusIndeterminate.children).forEach((child) => {
-				child.style.borderTopColor = '';
-			});
-			statusIndeterminate.children[i].style.borderTopColor = '#dfdfdf';
-		}
-	}
-
-	function setStatusMode(mode) {
-		if (statusMode === mode || !initializing) {
-			return;
-		}
-		[statusProgress, statusIndeterminate, statusNotice].forEach((elem) => {
-			elem.style.display = 'none';
-		});
-		animationCallbacks = animationCallbacks.filter(function (value) {
-			return (value !== animateStatusIndeterminate);
-		});
-		switch (mode) {
-		case 'progress':
-			statusProgress.style.display = 'block';
-			break;
-		case 'indeterminate':
-			statusIndeterminate.style.display = 'block';
-			animationCallbacks.push(animateStatusIndeterminate);
-			break;
-		case 'notice':
-			statusNotice.style.display = 'block';
-			break;
-		case 'hidden':
-			break;
-		default:
-			throw new Error('Invalid status mode');
-		}
-		statusMode = mode;
-	}
-
-	function setStatusNotice(text) {
-		while (statusNotice.lastChild) {
-			statusNotice.removeChild(statusNotice.lastChild);
-		}
-		const lines = text.split('\n');
-		lines.forEach((line) => {
-			statusNotice.appendChild(document.createTextNode(line));
-			statusNotice.appendChild(document.createElement('br'));
-		});
-	}
-
-	function displayFailureNotice(err) {
-		const msg = err.message || err;
-		console.error(msg);
-		setStatusNotice(msg);
-		setStatusMode('notice');
-		initializing = false;
-	}
-
-	const missing = Engine.getMissingFeatures();
-	if (missing.length !== 0) {
-		const missingMsg = 'Error\nThe following features required to run Godot projects on the Web are missing:\n';
-		displayFailureNotice(missingMsg + missing.join('\n'));
-	} else {
-		setStatusMode('indeterminate');
-		engine.startGame({
-			'onProgress': function (current, total) {
-				if (total > 0) {
-					statusProgressInner.style.width = `${(current / total) * 100}%`;
-					setStatusMode('progress');
-					if (current === total) {
-						// wait for progress bar animation
-						setTimeout(() => {
-							setStatusMode('indeterminate');
-						}, 500);
-					}
-				} else {
-					setStatusMode('indeterminate');
-				}
-			},
-		}).then(() => {
-			setStatusMode('hidden');
-			initializing = false;
-		}, displayFailureNotice);
-	}
-}());
-		</script>
-	</body>
 </html>
-
