@@ -6,7 +6,7 @@ function mostrarContacto() {
     const pantalla = document.getElementById("pantalla").style.display = "flex";
     const idContacto = document.getElementById("idContacto").style.display = "flex";
     const idVR = document.getElementById("idVR").style.display = "none";
-    const idServicios = document.getElementById("idServicios").style.display = "none";
+    const idServicios = document.getElementById("idPrensa").style.display = "none";
     sonidoTap()
 }
 
@@ -14,15 +14,15 @@ function mostrarExperiencia() {
     const pantalla = document.getElementById("pantalla").style.display = "flex";
     const idContacto = document.getElementById("idContacto").style.display = "none";
     const idVR = document.getElementById("idVR").style.display = "flex";
-    const idServicios = document.getElementById("idServicios").style.display = "none";
+    const idServicios = document.getElementById("idPrensa").style.display = "none";
     sonidoTap()
 }
 
-function mostrarServicios() {
+function mostrarPrensa() {
     const pantalla = document.getElementById("pantalla").style.display = "flex";
     const idContacto = document.getElementById("idContacto").style.display = "none";
     const idVR = document.getElementById("idVR").style.display = "none";
-    const idServicios = document.getElementById("idServicios").style.display = "flex";
+    const idServicios = document.getElementById("idPrensa").style.display = "flex";
     sonidoTap()
 }
 
@@ -57,6 +57,26 @@ var type = new Typed('#txtAnimado', {
     loopCount: Infinity,
     showCursor: true,
     cursorChar: '/',
+    fadeOut: false,
+    fadeOutClass: 'typed-fade-out',
+    fadeOutDelay: 50
+})
+
+var contacto = new Typed('#txtContacto', {
+    strings: [
+        '<i class="txtAnimado">CONTACTANOS PARA VIVIR LA EXPERIENCIA TRIMEDIA</i>',
+        '<i class="txtAnimado">NUESTROS SPONSORS Y CLIENTES</i>'
+        ],
+
+    typeSpeed: 70,
+    startDelay: 250,
+    backSpeed: 30,
+    smartBackspace: true,
+    shuffle: true,
+    backDelay: 1000,
+    loop: true,
+    loopCount: Infinity,
+    showCursor: false,
     fadeOut: false,
     fadeOutClass: 'typed-fade-out',
     fadeOutDelay: 50
