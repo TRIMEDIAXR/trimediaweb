@@ -41,6 +41,7 @@ body {
   backdrop-filter: blur(18px);
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
   height: 100vh !important;
+  width: 100vw !important;
 }
 .columna{
   margin-top: 20vh !important;
@@ -130,16 +131,15 @@ body {
   height: 10vh !important;
 }
 .animaLogo {
-  height: 70%;
+  height: 40vh !important;
   width: auto !important;
   border-radius: 250px !important;
   border: 2px solid rgb(255, 255, 255);
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 .animaLogo2 {
-  height: 45vh !important;
+  height: 40vh !important;
   width: auto !important;
-  
   border-radius: 250px !important;
   border: 6px solid rgb(255, 255, 255);
 }

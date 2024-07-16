@@ -57,3 +57,7 @@ window.onload = function () {
         }
     };
 };
+
+/* function cerrarPantalla(){
+    const cerrar = document.getElementById("pantalla").style.display = "none";
+} */
