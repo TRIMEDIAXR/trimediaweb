@@ -26,16 +26,14 @@
             <div class="row  d-flex flex-column justify-content-center align-content-center" id="caja">
                 <!--PANTALLA CONTACTO-->
                 <div class="flex-column justify-content-end " id="idContacto">
-                    <div class="row justify-content-center mt-3 " id="pantallaArriba">
+                    <div class="row justify-content-center mt-3 pantallaArriba">
                         <div class="col-2 d-flex flex-column align-content-center me-0 me-0">
                         </div>
                         <div class="col-8 d-flex flex-column align-content-center me-0 me-0">
                             <span class="text-center text-white mt-2" id="txtContacto"></span>
                         </div>
                         <div class="col-2 d-flex flex-column align-content-center me-0 me-0">
-                            <!--  MOSTRAR MAS INFO
-                            <a id="btnInfo" href="#" onclick="cerrarPantalla()"><img src="images/salir.png" alt="info"
-                                    class="contact"></a> -->
+                            
                         </div>
                     </div>
                     <div class="row justify-content-center mt-4">
@@ -106,12 +104,74 @@
                     </div>
                 </div>
                 <!--PANTALLA EXPERIENCIA-->
-                <div class=" justify-content-center" id="idVR">
-                    <div class="d-flex flex-column justify-content-center align-content-center columna2" id="caja2">
-                        <a href="vr.html"><img src="images/vricon.png" alt="whatsapp"
-                                class="mt-4 contact img-fluid"></a>
-                        <span class="text-white text-center mt-3">Experiencia VR Online</span>
+                <div class="flex-column justify-content-center" id="idVR">
+                    <div class="row justify-content-center mt-3 pantallaArriba">
+                        <div class="col-2 d-flex flex-column align-content-center me-0 me-0">
+                        </div>
+                        <div class="col-8 d-flex flex-column align-content-center me-0 me-0">
+                            <span class="text-center text-white mt-2" id="txtExperiencias"></span>
+                        </div>
+                        <div class="col-2 d-flex flex-column align-content-center me-0 me-0">
+                            
+                        </div>
+                    </div>
+                    <div class="row justify-content-center mt-4">
+                        <div class="col-12 me-0 me-0">
+                            <div id="carousel" class="carousel slide carousel-fade mt-2 me-0 me-0"
+                                data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="d-flex justify-content-center">
+                                            <img src="images/arquerovr.png" alt="antares" class="animaLogo2">
+                                        </div>
+                                        <div class="carousel-caption d-md-block">
+                                            <h5></h5>
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item h-100">
+                                        <div class="h-100 d-flex justify-content-center contenedor">
+                                            <img src="images/cliente2.png" alt="meopp" class="animaLogo2">
+                                        </div>
+                                        <div class="carousel-caption d-md-block">
+                                            <h5></h5>
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item h-100">
+                                        <div class="h-100 d-flex justify-content-center">
+                                            <img src="images/cliente3.png" alt="singular" class="animaLogo2">
+                                        </div>
+                                        <div class="carousel-caption d-md-block mt-1">
+                                            <h5></h5>
+                                            <p></p>
+                                        </div>
 
+                                    </div>
+                                    <div class="carousel-item h-100">
+                                        <div class="h-100 d-flex justify-content-center">
+                                            <img src="images/cliente4.png" alt="dubclub" class="animaLogo2">
+                                        </div>
+                                        <div class="carousel-caption d-md-block">
+                                            <h5></h5>
+                                            <p></p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center w-100 mt-5" id="caja2">
+                            <div class="col-4 d-flex flex-column align-content-center">
+                            </div>
+                            <div class="col-4 d-flex flex-column align-content-center"><a
+                                    href="vr.html" class="d-flex justify-content-center"><img
+                                        src="images/vricon.png" alt="whatsapp" class="contact" id="btn2"></a>
+                                <span class="text-white text-center mt-2">Experiencia VR Online</span>
+                            </div>
+                            <div class="col-4 d-flex flex-column align-content-center">
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <!--PANTALLA PRENSA-->
@@ -209,7 +269,7 @@
 
                 </button>
             </div>
-
+        </div>
     </main>
     <footer class="areaInf">
         <div class="row d-flex justify-content-center m-0">
@@ -273,6 +333,29 @@
             loop: true,
             loopCount: Infinity,
             showCursor: false,
+            fadeOut: false,
+            fadeOutClass: 'typed-fade-out',
+            fadeOutDelay: 50
+        })
+
+        var experiencias = new Typed('#txtExperiencias', {
+            strings: [
+                '<i class="txtAnimado">OFRECEMOS EXPERIENCIAS INMERSIVAS</i>',
+                '<i class="txtAnimado">CREAMOS MUNDOS</i>',
+                '<i class="txtAnimado">STORYTELLING Y EDUCACIÓN</i>',
+                '<i class="txtAnimado">EXPERIENCIAS INTERACTIVAS</i>',
+                ],
+
+            typeSpeed: 70,
+            startDelay: 250,
+            backSpeed: 30,
+            smartBackspace: true,
+            shuffle: true,
+            backDelay: 1000,
+            loop: true,
+            loopCount: Infinity,
+            showCursor: true,
+            cursorChar: '/',
             fadeOut: false,
             fadeOutClass: 'typed-fade-out',
             fadeOutDelay: 50

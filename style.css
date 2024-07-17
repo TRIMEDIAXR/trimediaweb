@@ -137,7 +137,7 @@ body {
   justify-content: center;
 
 }
-#pantallaArriba{
+.pantallaArriba{
   height: 10vh !important;
 }
 .animaLogo {
