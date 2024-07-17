@@ -1,3 +1,4 @@
+
 const pantalla = document.getElementById("pantalla").style.display = "none";
 let auxiliar=0;
 
@@ -61,3 +62,72 @@ window.onload = function () {
 function cerrarPantalla(){
     const cerrar = document.getElementById("pantalla").style.display = "none";
 }
+
+
+var type = new Typed('#txtAnimado', {
+    strings: [
+        '<i class="txtAnimado">EXPERIENCIAS INTERACTIVAS</i>',
+        '<i class="txtAnimado">VIDEOJUEGOS PERSONALIZADOS</i>',
+        '<i class="txtAnimado">VIDEOJUEGOS PARA EVENTOS</i>',
+        '<i class="txtAnimado">VIDEOJUEGOS PUBLICITARIOS</i>',
+        '<i class="txtAnimado">VIDEOJUEGOS EDUCATIVOS</i>',
+        '<i class="txtAnimado">REALIDAD VIRTUAL</i>',
+        '<i class="txtAnimado">REALIDAD AUMENTADA</i>'],
+
+    typeSpeed: 70,
+    startDelay: 250,
+    backSpeed: 30,
+    smartBackspace: true,
+    shuffle: true,
+    backDelay: 1000,
+    loop: true,
+    loopCount: Infinity,
+    showCursor: true,
+    cursorChar: '/',
+    fadeOut: false,
+    fadeOutClass: 'typed-fade-out',
+    fadeOutDelay: 50
+})
+
+var contacto = new Typed('#txtContacto', {
+    strings: [
+        '<i class="txtAnimado">CONTACTANOS PARA VIVIR LA EXPERIENCIA TRIMEDIA</i>',
+        '<i class="txtAnimado">NUESTROS SPONSORS Y CLIENTES</i>'
+    ],
+
+    typeSpeed: 70,
+    startDelay: 250,
+    backSpeed: 30,
+    smartBackspace: true,
+    shuffle: true,
+    backDelay: 1000,
+    loop: true,
+    loopCount: Infinity,
+    showCursor: false,
+    fadeOut: false,
+    fadeOutClass: 'typed-fade-out',
+    fadeOutDelay: 50
+})
+
+var experiencias = new Typed('#txtExperiencias', {
+    strings: [
+        '<i class="txtAnimado">OFRECEMOS EXPERIENCIAS INMERSIVAS</i>',
+        '<i class="txtAnimado">CREAMOS MUNDOS</i>',
+        '<i class="txtAnimado">STORYTELLING Y EDUCACIÓN</i>',
+        '<i class="txtAnimado">EXPERIENCIAS INTERACTIVAS</i>',
+        ],
+
+    typeSpeed: 70,
+    startDelay: 250,
+    backSpeed: 30,
+    smartBackspace: true,
+    shuffle: true,
+    backDelay: 1000,
+    loop: true,
+    loopCount: Infinity,
+    showCursor: true,
+    cursorChar: '/',
+    fadeOut: false,
+    fadeOutClass: 'typed-fade-out',
+    fadeOutDelay: 50
+})
