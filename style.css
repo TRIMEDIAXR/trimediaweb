@@ -12,7 +12,7 @@ body {
   /* Hide horizontal scrollbar */
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   overflow: auto;
-  background: linear-gradient(0deg, rgb(7, 30, 82) 29%, rgb(12, 71, 138) 38%, rgb(6, 26, 69) 70%);
+  background: linear-gradient(0deg, rgb(7, 30, 82) 29%, rgb(0, 70, 149) 38%, rgb(6, 26, 69) 70%);
   animation: gradient 14s ease infinite;
   background-size: 500% 500%;
   background-attachment: fixed;
@@ -251,7 +251,7 @@ body {
 
 .line {
   position: absolute;
-  width: 1px;
+  width: 2px;
   height: 100%;
   top: 0;
   left: 50%;
@@ -267,7 +267,7 @@ body {
   width: 100%;
   top: -50%;
   left: 0;
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #ffffff 75%, #ffffff 100%);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #F9711C 75%, #F9711C 100%);
   -webkit-animation: drop 5s 0s infinite;
   animation: drop 7s 0s infinite;
   -webkit-animation-fill-mode: forwards;
