@@ -17,8 +17,7 @@ var type = new Typed('#txtAnimado', {
         '<i class="txtAnimado">VIDEOJUEGOS PARA EVENTOS</i>',
         '<i class="txtAnimado">VIDEOJUEGOS PUBLICITARIOS</i>',
         '<i class="txtAnimado">VIDEOJUEGOS EDUCATIVOS</i>',
-        '<i class="txtAnimado">REALIDAD VIRTUAL</i>',
-        '<i class="txtAnimado">REALIDAD AUMENTADA</i>'],
+        '<i class="txtAnimado">REALIDAD VIRTUAL</i>'],
 
     typeSpeed: 70,
     startDelay: 250,
@@ -61,6 +60,29 @@ var experiencias = new Typed('#txtExperiencias', {
         '<i class="txtAnimado">CREAMOS MUNDOS</i>',
         '<i class="txtAnimado">STORYTELLING Y EDUCACIÓN</i>',
         '<i class="txtAnimado">EXPERIENCIAS INTERACTIVAS</i>',
+        ],
+
+    typeSpeed: 70,
+    startDelay: 250,
+    backSpeed: 30,
+    smartBackspace: true,
+    shuffle: true,
+    backDelay: 1000,
+    loop: true,
+    loopCount: Infinity,
+    showCursor: true,
+    cursorChar: '/',
+    fadeOut: false,
+    fadeOutClass: 'typed-fade-out',
+    fadeOutDelay: 50
+})
+
+var trayectoria = new Typed('#txtTrayectoria', {
+    strings: [
+        '<i class="txtAnimado">ENTERATE DE LAS ÚLTIMAS NOTICIAS</i>',
+        '<i class="txtAnimado">ENTREVISTAS Y EVENTOS</i>',
+        '<i class="txtAnimado">PRENSA Y DIFUSIÓN</i>',
+        '<i class="txtAnimado">QUIENES SOMOS</i>',
         ],
 
     typeSpeed: 70,

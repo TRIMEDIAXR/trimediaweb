@@ -83,7 +83,7 @@ body {
   background-color: #F9711C !important;
   border-color: #F9711C !important;
   color: white !important;
-  width: 70% !important;
+  
   align-self: center !important;
 }
 
@@ -204,7 +204,9 @@ body {
   justify-content: center;
 
 }
-
+.ma{
+  margin-top: 6rem;
+}
 .pantallaArriba {
   height: 10vh !important;
 }
