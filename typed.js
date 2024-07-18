@@ -12,12 +12,12 @@
 
 var type = new Typed('#txtAnimado', {
     strings: [
-        '<i class="txtAnimado">EXPERIENCIAS INTERACTIVAS</i>',
-        '<i class="txtAnimado">VIDEOJUEGOS PERSONALIZADOS</i>',
-        '<i class="txtAnimado">VIDEOJUEGOS PARA EVENTOS</i>',
-        '<i class="txtAnimado">VIDEOJUEGOS PUBLICITARIOS</i>',
-        '<i class="txtAnimado">VIDEOJUEGOS EDUCATIVOS</i>',
-        '<i class="txtAnimado">REALIDAD VIRTUAL</i>'],
+        '<i class="txtAnimado">REALIDAD VIRTUAL APLICADA</i>',
+        '<i class="txtAnimado">ENTRETENIMIENTO</i>',
+        '<i class="txtAnimado">EDUCACIÓN</i>',
+        '<i class="txtAnimado">ARQUITECTURA</i>',
+        '<i class="txtAnimado">MARKETING</i>'
+        ],
 
     typeSpeed: 70,
     startDelay: 250,
@@ -36,7 +36,7 @@ var type = new Typed('#txtAnimado', {
 
 var contacto = new Typed('#txtContacto', {
     strings: [
-        '<i class="txtAnimado">CONTACTANOS PARA VIVIR LA EXPERIENCIA TRIMEDIA</i>',
+        '<i class="txtAnimado">CONTACTANOS A ESTOS MEDIOS</i>',
         '<i class="txtAnimado">NUESTROS SPONSORS Y CLIENTES</i>'
     ],
 
@@ -56,10 +56,9 @@ var contacto = new Typed('#txtContacto', {
 
 var experiencias = new Typed('#txtExperiencias', {
     strings: [
-        '<i class="txtAnimado">OFRECEMOS EXPERIENCIAS INMERSIVAS</i>',
+        '<i class="txtAnimado">TRIMEDIAXR</i>',
         '<i class="txtAnimado">CREAMOS MUNDOS</i>',
-        '<i class="txtAnimado">STORYTELLING Y EDUCACIÓN</i>',
-        '<i class="txtAnimado">EXPERIENCIAS INTERACTIVAS</i>',
+        '<i class="txtAnimado">CREAMOS EL FUTURO</i>',
         ],
 
     typeSpeed: 70,
@@ -79,10 +78,9 @@ var experiencias = new Typed('#txtExperiencias', {
 
 var trayectoria = new Typed('#txtTrayectoria', {
     strings: [
-        '<i class="txtAnimado">ENTERATE DE LAS ÚLTIMAS NOTICIAS</i>',
-        '<i class="txtAnimado">ENTREVISTAS Y EVENTOS</i>',
+        '<i class="txtAnimado">REVIEWS</i>',
         '<i class="txtAnimado">PRENSA Y DIFUSIÓN</i>',
-        '<i class="txtAnimado">QUIENES SOMOS</i>',
+        '<i class="txtAnimado">TRABAJOS REALIZADOS</i>'
         ],
 
     typeSpeed: 70,
