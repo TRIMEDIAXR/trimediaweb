@@ -93,7 +93,7 @@ var trayectoria = new Typed('#txtTrayectoria', {
     backDelay: 1000,
     loop: true,
     loopCount: Infinity,
-    showCursor: true,
+    showCursor: false,
     cursorChar: '/',
     fadeOut: false,
     fadeOutClass: 'typed-fade-out',

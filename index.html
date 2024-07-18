@@ -8,6 +8,7 @@
     <meta name="keywords" content="VR,AR,interactivo,videojuegos,BTL,realidad virtual,realidad aumentada">
     <title>Trimedia Web</title>
     <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="swiper.css">
     <link rel="stylesheet" href="style.css">
 
     <link rel="shortcut icon" href="#" type="image/x-icon" />
@@ -41,18 +42,21 @@
                     </div>
                     <div class="row justify-content-center mt-4">
                         <div class="col-12 me-0 me-0">
-                            <div id="carouselExampleCaptions4" class="carousel slide carousel-fade mt-2 me-0 me-0 adelante"
-                                data-bs-ride="carousel">
+                            <div id="carouselExampleCaptions4"
+                                class="carousel slide carousel-fade mt-2 me-0 me-0 adelante" data-bs-ride="carousel">
                                 <div class="carousel-indicators">
                                     <button type="button" data-bs-target="#carouselExampleCaptions4"
                                         data-bs-slide-to="0" class="active ma" aria-current="true" aria-label="Slide 1"
                                         onclick="sonidoBTN()"></button>
                                     <button type="button" data-bs-target="#carouselExampleCaptions4"
-                                        data-bs-slide-to="1" aria-label="Slide 2" onclick="sonidoBTN()" class="ma"></button>
+                                        data-bs-slide-to="1" aria-label="Slide 2" onclick="sonidoBTN()"
+                                        class="ma"></button>
                                     <button type="button" data-bs-target="#carouselExampleCaptions4"
-                                        data-bs-slide-to="2" aria-label="Slide 3" onclick="sonidoBTN()" class="ma"></button>
+                                        data-bs-slide-to="2" aria-label="Slide 3" onclick="sonidoBTN()"
+                                        class="ma"></button>
                                     <button type="button" data-bs-target="#carouselExampleCaptions4"
-                                        data-bs-slide-to="3" aria-label="Slide 4" onclick="sonidoBTN()" class="ma"></button>
+                                        data-bs-slide-to="3" aria-label="Slide 4" onclick="sonidoBTN()"
+                                        class="ma"></button>
                                 </div>
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
@@ -92,14 +96,14 @@
                                             <p></p>
                                         </div>
                                     </div>
-                                    <button class="carousel-control-prev h-100" type="button" data-bs-target="#carouselExampleCaptions4"
-                                        data-bs-slide="prev" alt="atras">
+                                    <button class="carousel-control-prev h-100" type="button"
+                                        data-bs-target="#carouselExampleCaptions4" data-bs-slide="prev" alt="atras">
                                         <span class="carousel-control-prev-icon" aria-hidden="true" id="atra"
                                             onclick="sonidoUI(this)"></span>
 
                                     </button>
-                                    <button class="carousel-control-next h-100" type="button" data-bs-target="#carouselExampleCaptions4"
-                                        data-bs-slide="next" alt="adelante">
+                                    <button class="carousel-control-next h-100" type="button"
+                                        data-bs-target="#carouselExampleCaptions4" data-bs-slide="next" alt="adelante">
                                         <span class="carousel-control-next-icon" aria-hidden="true" id="ade"
                                             onclick="sonidoUI(this)"></span>
 
@@ -193,14 +197,14 @@
                                             <p></p>
                                         </div>
                                     </div>
-                                    <button class="carousel-control-prev h-100" type="button" data-bs-target="#carouselExampleCaptions3"
-                                        data-bs-slide="prev" alt="atras">
+                                    <button class="carousel-control-prev h-100" type="button"
+                                        data-bs-target="#carouselExampleCaptions3" data-bs-slide="prev" alt="atras">
                                         <span class="carousel-control-prev-icon" aria-hidden="true" id="atra"
                                             onclick="sonidoUI(this)"></span>
 
                                     </button>
-                                    <button class="carousel-control-next h-100" type="button" data-bs-target="#carouselExampleCaptions3"
-                                        data-bs-slide="next" alt="adelante">
+                                    <button class="carousel-control-next h-100" type="button"
+                                        data-bs-target="#carouselExampleCaptions3" data-bs-slide="next" alt="adelante">
                                         <span class="carousel-control-next-icon" aria-hidden="true" id="ade"
                                             onclick="sonidoUI(this)"></span>
 
@@ -232,78 +236,39 @@
                         <div class="col-2 d-flex flex-column align-content-center me-0 me-0">
                         </div>
                     </div>
-                    <div id="carouselExampleCaptions2" class="carousel slide h-100 carousel-fade mt-4"
-                        data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="0"
-                                class="active" aria-current="true" aria-label="Slide 1" onclick="sonidoBTN()"></button>
-                            <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="1"
-                                aria-label="Slide 2" onclick="sonidoBTN()"></button>
-                            <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="2"
-                                aria-label="Slide 3" onclick="sonidoBTN()"></button>
-
-                        </div>
-                        <div class="carousel-inner h-100">
-                            <div class="carousel-item active h-100">
-                                <div class="h-100 d-flex justify-content-center">
-                                    <img src="images/team.png" alt="loopLogo" class="animaLogo2">
+                    <!-- SLIDER DE NOTICIAS Y EVENTOS -->
+                    <div class="row justify-content-center m-0">
+                        <div class="col-12 col-sm-4">
+                            <div class="swiper ">
+                                <!-- Additional required wrapper -->
+                                <div class="swiper-wrapper">
+                                    <!-- Slides -->
+                                    <div class="swiper-slide col-12 col-md-4">
+                                        <div class="row w-100 m-0 p-0">
+                                            <div class="col-12 p-0">
+                                                <img src="images/fondo.png" alt="noticia1" class="imgNoticia p-0 m-0">
+                                            </div>
+                                            <div class="col-12 d-flex flex-column align-content-center">
+                                                <h1 class="text-white text-center mt-2">Noticia 1</h1>
+                                                <p class="text-white text-center">Vivimos Tucumán un finde</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide d-flex flex-column align-content-center">
+                                        <img src="images/fondo.png" alt="noticia2" class="img img-fluid">
+                                        <h1 class="text-white text-center mt-2">Noticia 2</h1>
+                                        <p class="text-white text-center">Radio Capital Margarita a los Chanchos</p>
+                                    </div>
+                                    <div class="swiper-slide d-flex flex-column align-content-center">
+                                        <img src="images/fondo.png" alt="noticia3" class="img img-fluid">
+                                        <h1 class="text-white text-center mt-2">Noticia 3</h1>
+                                        <p class="text-white text-center">DevPlay Evento en Neuquén</p>
+                                    </div>
                                 </div>
-                                <div class="carousel-caption d-md-block">
-                                    <h5>TRIMEDIA XR</h5>
-                                    <p>Creamos el futuro.</p>
-                                </div>
-                            </div>
-                            <div class="carousel-item h-100">
-                                <div class="h-100 d-flex justify-content-center contenedor">
-                                    <video src="videos/vrantares.webm" class="animaLogo2" loop autoplay muted></video>
-
-                                </div>
-                                <div class="carousel-caption d-md-block">
-                                    <h5>REALIDAD VIRTUAL APLICADA</h5>
-                                    <p>Entretenimiento, Educacion, Arquitectura, Marketing.</p>
-                                </div>
-                            </div>
-                            <div class="carousel-item h-100">
-                                <div class="h-100 d-flex justify-content-center">
-                                    <video src="videos/cuis.webm" class="animaLogo2" loop autoplay muted></video>
-                                </div>
-                                <div class="carousel-caption d-md-block mt-1">
-                                    <h5>EVENTOS</h5>
-                                    <p>Gamificación para instituciones y empresas.</p>
-                                </div>
+                                <!-- If we need pagination -->
+                                <div class="swiper-pagination"></div>
 
                             </div>
-
-                            <button class="carousel-control-prev h-100" type="button"
-                                data-bs-target="#carouselExampleCaptions2" data-bs-slide="prev" alt="atras">
-                                <span class="carousel-control-prev-icon" aria-hidden="true" id="izq"
-                                    onclick="sonidoUI(this)"></span>
-
-                            </button>
-                            <button class="carousel-control-next h-100" type="button"
-                                data-bs-target="#carouselExampleCaptions2" data-bs-slide="next" alt="adelante">
-                                <span class="carousel-control-next-icon" aria-hidden="true" id="der"
-                                    onclick="sonidoUI(this)"></span>
-
-                            </button>
-                        </div>
-                    </div>
-                    <div class="row justify-content-center w-100 mt-5" id="caja2">
-                        <div class="col-4 d-flex flex-column align-content-center"><a
-                                href="https://www.instagram.com/trimediaxr/" class="d-flex justify-content-center"><img
-                                    src="images/insta.png" alt="instagram" class="contact" id="btn1"></a>
-                            <span class="text-white text-center mt-2">Instagram</span>
-                        </div>
-                        <div class="col-4 d-flex flex-column align-content-center"><a href="https://wa.me/543513413350"
-                                class="d-flex justify-content-center"><img src="images/whatsapp.png" alt="whatsapp"
-                                    class="contact" id="btn2"></a>
-                            <span class="text-white text-center mt-2">Whatsapp</span>
-                        </div>
-                        <div class="col-4 d-flex flex-column align-content-center"><a
-                                href="mailto:experienciatrimedia@gmail.com" class="d-flex justify-content-center">
-                                <img src="images/mail.png" alt="mail" class="contact" id="btn3">
-                            </a>
-                            <span class="text-white text-center mt-2">Mail</span>
                         </div>
                     </div>
                 </div>
@@ -382,13 +347,16 @@
     <footer class="areaInf">
         <div class="row d-flex justify-content-center m-0">
             <div class="col text-white text-center m-0">
-                <button type="button" class="btn btn-outline-light p-1 m-0" onclick="mostrarContacto()">Contacto</button>
+                <button type="button" class="btn btn-outline-light p-1 m-0"
+                    onclick="mostrarContacto()">Contacto</button>
             </div>
             <div class="col text-white text-center m-0">
-                <button type="button" class="btn btn-outline-warning p-1 m-0" onclick="mostrarExperiencia()">Experiencias</button>
+                <button type="button" class="btn btn-outline-warning p-1 m-0"
+                    onclick="mostrarExperiencia()">Experiencias</button>
             </div>
             <div class="col text-white text-center m-0">
-                <button type="button" class="btn btn-outline-light p-1 m-0" onclick="mostrarPrensa()">Trayectoria</button>
+                <button type="button" class="btn btn-outline-light p-1 m-0"
+                    onclick="mostrarPrensa()">Trayectoria</button>
             </div>
 
             <h5 class="text-center mt-2 creditos">Powered by Trimedia Team </h5>
@@ -399,6 +367,7 @@
     <!-- LIBRERIA DE TYPE ANIMACION DE TEXTO -->
     <script src="coi-serviceworker.js"></script>
     <script src="typed.js"></script>
+    <script src="swiper.js"></script>
     <script src="main.js"></script>
     <script src="bootstrap.js"></script>
 

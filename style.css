@@ -227,7 +227,6 @@ body {
 }
 
 
-
 .carousel-caption {
   margin-top: 0 !important;
   margin-bottom: 0 !important;
@@ -248,7 +247,23 @@ body {
   z-index: -1;
 
 }
-
+.swiper {
+  width: 100% !important;
+  height: 65vh !important;
+  margin: 0px;
+}
+.imgNoticia{
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide{
+  height: 100% !important;
+  
+  border-radius: 30px !important;
+  border: 6px solid rgb(255, 255, 255);
+  
+  overflow: hidden;
+}
 .line {
   position: absolute;
   width: 2px;
