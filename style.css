@@ -48,7 +48,7 @@ body {
   width: 100vw;
   height: 200vh;
   background-image: url("./images/estrellas.png");
-  animation: scaleAnimation 5s infinite alternate, rotateAnimation 220s infinite linear; /* 5 segundos de duración, infinito y alternante */
+  animation:rotateAnimation 220s infinite linear; /* 5 segundos de duración, infinito y alternante */
   
 }
 .adelante{
