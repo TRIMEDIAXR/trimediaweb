@@ -22,9 +22,10 @@ const swiper = new Swiper('.swiper', {
     // If we need pagination
     pagination: {
       el: '.swiper-pagination',
+      clickable: true,
     },
     autoplay: {
-        delay: 3000,
+        delay: 2000,
       },
       navigation: {
         nextEl: '.swiper-button-next',
