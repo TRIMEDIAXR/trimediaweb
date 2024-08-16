@@ -1,7 +1,7 @@
 
 const pantalla = document.getElementById("pantalla").style.display = "none";
 let auxiliar=0;
-
+const video = document.getElementById("gameplay").style.display="none";
 
 function mostrarContacto() {
     const pantalla = document.getElementById("pantalla").style.display = "flex";
@@ -25,6 +25,11 @@ function mostrarPrensa() {
     const idVR = document.getElementById("idVR").style.display = "none";
     const idServicios = document.getElementById("idPrensa").style.display = "flex";
     sonidoTap()
+}
+
+function mostrarGameplay(){
+    const carru = document.getElementById("carouselExampleCaptions3").style.display="none";
+    const video = document.getElementById("gameplay").style.display="flex";
 }
 
 function sonidoUI(boton){
