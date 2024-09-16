@@ -1,7 +1,6 @@
 
 const pantalla = document.getElementById("pantalla").style.display = "none";
 let auxiliar=0;
-const video = document.getElementById("gameplay").style.display="none";
 
 function mostrarContacto() {
     const pantalla = document.getElementById("pantalla").style.display = "flex";

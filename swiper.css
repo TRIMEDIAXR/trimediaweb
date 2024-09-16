@@ -498,11 +498,11 @@ button.swiper-pagination-bullet {
 
 .swiper-horizontal>.swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet,
 .swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
-    transition: .2s transform, .2s left
+    transition: .4s transform, .4s left
 }
 
 .swiper-horizontal.swiper-rtl>.swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
-    transition: .2s transform, .2s right
+    transition: .4s transform, .4s right
 }
 
 .swiper-pagination-fraction {

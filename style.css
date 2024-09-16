@@ -101,7 +101,12 @@ body {
   height: 100vh !important;
   width: 100vw !important;
 }
-
+#caja{
+  height: 89vh !important;
+}
+.centrolog{
+  height: 55vh !important;
+}
 .columna {
   margin-top: 20vh !important;
   width: 100px !important;
